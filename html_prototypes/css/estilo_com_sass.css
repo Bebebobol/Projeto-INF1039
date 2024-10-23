@@ -70,8 +70,8 @@ body {
 /* CABEÇALHO */
 
 .cabecalho {
-    background-color: rgb(29, 131, 209);
-    border-bottom: 1px solid gray;
+    background-color: #F2F2F2;
+    border-bottom: 1px solid black;
     margin-bottom: 1em;
 }
 
@@ -99,8 +99,8 @@ body {
 /* Aumentar a altura do logo da PUC Rio */
 
 .navbar-brand img {
-    width: 120px;
-    height: 160px;
+    width: 90px;
+    height: 300px;
     /* Aumentado de 40px para 60px */
 }
 
@@ -134,11 +134,9 @@ body {
 
 /* TÍTULO PRINCIPAL */
 
-.titulo-principal {
-    font-size: 2.5em;
-    font-weight: bold;
-    color: #FF962B;
-    margin-bottom: 1em;
+.title-break {
+    white-space: normal; /* Allows text to wrap */
+    text-align: center; /* Centers the text */
 }
 
 
@@ -377,6 +375,11 @@ body {
 
 #fale-conosco h6 {
     text-align: justify;
+}
+
+#login-form {
+    margin-left: -60px; /* Adjust as needed */
+    /* Add other styles here as necessary */
 }
 
 
