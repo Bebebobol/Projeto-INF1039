@@ -32,27 +32,45 @@
 </head>
 
 <body>
+
     <!-- CABEÇALHO -->
     <header class="container-fluid">
         <div class="row">
-            <nav class="navbar navbar-expand-lg cabecalho w-120">
-                <!-- Logo da Ambiente de Aprendizagem Integrado Centralizado -->
-                <div class="col-12 d-flex justify-content-center align-items-center">
+            <nav class="navbar navbar-expand-lg cabecalho w-100">
+                <!-- Logo Section -->
+                <div class="col d-flex justify-content-start align-items-center">
                     <a href="index.html" class="navbar-brand d-flex align-items-center">
-                        <span class="ms-2 title-break">Ambiente conjunto de aprendizagem online</span>
-                        <img src="img/logo-puc-rio1.png" alt="Ambiente de Aprendizagem Integrado" style="height: 60px;">
+                        <img src="img/logo-puc-rio1.png" alt="Logo">
+                        <span class="ms-2 title-break">E-PUC-RIO</span>
                     </a>
                 </div>
-                <!-- Botão Toggler para Mobile -->
+
+                <!-- Toggler Button for Mobile -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-items" aria-controls="navbar-items" aria-expanded="false" aria-label="Toggle navigation">
                     <i class="bi bi-list"></i>
                 </button>
+
+                <!-- Navbar Items -->
+                <div class="collapse navbar-collapse justify-content-end" id="navbar-items">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="atedimento.html" class="nav-link">Atendimento</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="https://inscricoes.ecoa.puc-rio.br/meus_dados" class="nav-link">Ecoa</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="chat.html" class="nav-link">Professores</a>
+                        </li>
+                    </ul>
+                </div>
             </nav>
         </div>
     </header>
 
+
     <!-- LOGIN -->
-    <div class="container">
+    <div class="container extra-spacing">
         <div class="row justify-content-center">
             <form id="login-form" class="col-12 col-md-5">
                 <!-- Reduzido para col-md-5 -->
@@ -68,9 +86,9 @@
                 <div class="col-12 centralizar">
                     <div class="form-row">
                         <div class="col-12">
-                            <input type="text" placeholder="Escreva sua matrícula" class="form-control my-3 p-2" style="width: 100%; max-width: 600px;">
-                            <input type="password" placeholder="*******" class="form-control my-3 p-2" style="width: 100%; max-width: 600px;">
-                            <button class="btn botao-laranja mt-3 mb-3 w-100">Entrar</button>
+                            <input type="text" placeholder="Escreva sua matrícula" class="form-control my-3 p-2 rounded-input" style="width: 100%; max-width: 600px;">
+                            <input type="password" placeholder="*******" class="form-control my-3 p-2 rounded-input" style="width: 100%; max-width: 600px;">
+                            <button class="btn botao-laranja mt-3 mb-3 w-100 rounded-input">Entrar</button>
                         </div>
                     </div>
                 </div>
@@ -78,7 +96,7 @@
                     <a href="recuperar_senha.html">Esqueceu sua senha?</a>
                 </div>
                 <div class="col-12 centralizar mb-5">
-                    <p>Não possui uma conta? <a href="cadastro.html">Crie uma aqui.</a> </p>
+                    <p style="color: black;">Não possui uma conta? <a href="cadastro.html">Crie uma aqui.</a> </p>
                 </div>
             </form>
         </div>

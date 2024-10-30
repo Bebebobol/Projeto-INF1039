@@ -71,8 +71,10 @@ body {
 
 .cabecalho {
     background-color: #F2F2F2;
-    border-bottom: 1px solid black;
-    margin-bottom: 1em;
+    border-bottom: 1px solid #F2A20C;
+    margin-bottom: 2em;
+    padding: 2em 0;
+    height: auto;
 }
 
 .cabecalho a {
@@ -87,31 +89,83 @@ body {
     border-bottom: 1px solid #F2F2F2;
 }
 
+
+/* Logo and Title */
+
+.navbar-brand img {
+    width: auto;
+    height: 200px;
+    max-height: none;
+    margin-left: 10%;
+}
+
+.title-break {
+    white-space: nowrap;
+    /* Prevents text from breaking into multiple lines */
+    overflow: hidden;
+    /* Hides overflow text */
+    text-overflow: ellipsis;
+    /* Adds "..." to indicate that the text is truncated */
+    max-width: 100%;
+    /* Ensures the title does not exceed the width of its container */
+    margin-left: 10%;
+}
+
+@media (max-width: 768px) {
+    /* Adjust font size for smaller screens */
+    .title-break {
+        font-size: 1.2rem;
+        /* Smaller font size */
+    }
+}
+
+
+/* Navbar Item Styling */
+
 #navbar-items .navbar-nav {
-    width: 100%;
+    width: auto;
 }
 
 #navbar-items .nav-item {
-    font-size: 1.4em;
+    font-size: 1.2em;
+}
+
+
+/* Button and Search Styling */
+
+.nav-link {
+    margin-left: 15px;
+    font-weight: bold;
+}
+
+.nav-link:first-of-type {
+    margin-left: 0;
+}
+
+
+/* Responsive Adjustments */
+
+@media (max-width: 768px) {
+    .navbar-brand {
+        flex-grow: 1;
+        justify-content: start;
+    }
+    #navbar-items .nav-item {
+        text-align: center;
+    }
 }
 
 
 /* Aumentar a altura do logo da PUC Rio */
 
-.navbar-brand img {
-    width: 90px;
-    height: 300px;
-    /* Aumentado de 40px para 60px */
-}
-
 .navbar-brand span {
     font-weight: 700;
     font-size: 1.5em;
-    margin-left: 0.5em;
+    margin-left: 0.6em;
 }
 
 .nav-item input {
-    border-radius: 30px;
+    border-radius: 40px;
 }
 
 .nav-item button {
@@ -135,8 +189,10 @@ body {
 /* TÍTULO PRINCIPAL */
 
 .title-break {
-    white-space: normal; /* Allows text to wrap */
-    text-align: center; /* Centers the text */
+    white-space: normal;
+    /* Allows text to wrap */
+    text-align: center;
+    /* Centers the text */
 }
 
 
@@ -196,7 +252,7 @@ body {
 
 #rodape-baixo {
     text-align: center;
-    border-top: 1px solid gray;
+    border-top: 1px solid #F2A20C;
     padding-top: 1em;
     /* Reduzido de 2em para 1em */
 }
@@ -349,7 +405,7 @@ body {
     height: 50px;
     width: 100%;
     /* Alterado para 100% para responsividade */
-    background-color: white;
+    background-color: #FF962B;
     border-radius: 4px;
     font-weight: bold;
 }
@@ -378,8 +434,35 @@ body {
 }
 
 #login-form {
-    margin-left: -60px; /* Adjust as needed */
+    margin-left: -60px;
+    /* Adjust as needed */
     /* Add other styles here as necessary */
+}
+
+.rounded-input {
+    border-radius: 25px;
+    /* Adjust as needed for a more oval shape */
+}
+
+.container {
+    background-image: url('login_img.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 30px;
+    border-radius: 10px;
+    position: relative;
+    color: #fff;
+}
+
+form.col-12.col-md-5 {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.extra-spacing {
+    margin-bottom: 80px;
+    /* Adjust as needed */
 }
 
 
